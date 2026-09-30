@@ -313,33 +313,6 @@ img { max-width: 100%; display: block; }
   filter: grayscale(0%);
 }
 
-.client-video {
-  position: relative;
-}
-
-.client-video video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  background: #000;
-}
-
-.client-video-tag {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: var(--red);
-  color: var(--white);
-  font-family: var(--font-display);
-  font-size: 0.85rem;
-  letter-spacing: 1px;
-  padding: 4px 12px;
-  border-radius: 4px;
-  pointer-events: none;
-  z-index: 2;
-}
-
 /* ---------- About ---------- */
 
 .about-inner {
