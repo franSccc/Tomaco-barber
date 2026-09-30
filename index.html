@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tomaco Barber's</title>
+<meta name="description" content="Tomaco Barber's — Barbería en Esteban Echeverría. Cortes clásicos, fade, arreglo de barba y más.">
+<link rel="icon" href="images/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#inicio" class="brand">
+      <img src="images/logo.png" alt="Tomaco Barber's" class="brand-logo">
+      <span class="brand-name">TOMACO <strong>BARBER'S</strong></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section id="inicio" class="hero">
+  <div class="hero-overlay"></div>
+  <div class="container hero-inner">
+    <img src="images/logo.png" alt="Tomaco Barber's" class="hero-logo">
+    <h1>ESTILO. PRECISIÓN. <span class="accent">ACTITUD.</span></h1>
+    <p class="hero-sub">Barbería en Esteban Echeverría — cortes clásicos y modernos, hechos con oficio.</p>
+    <div class="hero-buttons">
+      <a href="https://instagram.com/tomacobarbers" target="_blank" rel="noopener" class="btn btn-primary">Reservá por Instagram</a>
+      <a href="#servicios" class="btn btn-outline">Ver servicios</a>
+    </div>
+  </div>
+</section>
+
+<section id="servicios" class="section services">
+  <div class="container">
+    <h2 class="section-title">Nuestros <span class="accent">Servicios</span></h2>
+    <p class="section-sub">Editá esta lista con los servicios y precios reales de la barbería.</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">✂️</div>
+        <h3>Corte Clásico</h3>
+        <p>Corte tradicional prolijo, adaptado a cada estilo.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🪒</div>
+        <h3>Arreglo de Barba</h3>
+        <p>Perfilado y afeitado con navaja para un acabado impecable.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔥</div>
+        <h3>Combo Corte + Barba</h3>
+        <p>El servicio completo: corte y barba en una misma sesión.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">⚡</div>
+        <h3>Diseño / Fade</h3>
+        <p>Degradados y diseños personalizados a mano alzada.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="nosotros" class="section about">
+  <div class="container about-inner">
+    <div class="about-text">
+      <h2 class="section-title">Sobre <span class="accent">Nosotros</span></h2>
+      <p>Tomaco Barber's es una barbería de Esteban Echeverría enfocada en cortes prolijos y atención personalizada. Este texto es un placeholder: contanos la historia del local, hace cuánto abrió, qué los distingue, y lo reemplazamos por el real.</p>
+    </div>
+    <div class="about-logo">
+      <img src="images/logo.png" alt="Tomaco Barber's">
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="section contact">
+  <div class="container">
+    <h2 class="section-title">Contacto <span class="accent">&amp; Ubicación</span></h2>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-label">📍 Dirección</span>
+          <span>Restelli 1698, Esteban Echeverría</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">📷 Instagram</span>
+          <a href="https://instagram.com/tomacobarbers" target="_blank" rel="noopener">@tomacobarbers</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">🕒 Horarios</span>
+          <span>Editar con los horarios reales (ej: Lun a Sáb, 9 a 20 hs)</span>
+        </div>
+        <a href="https://instagram.com/tomacobarbers" target="_blank" rel="noopener" class="btn btn-primary contact-cta">Escribinos por Instagram</a>
+      </div>
+
+      <div class="map-wrap">
+        <iframe
+          src="https://www.google.com/maps?q=Restelli+1698,+Esteban+Echeverr%C3%ADa&output=embed"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <img src="images/logo.png" alt="Tomaco Barber's" class="footer-logo">
+    <p>&copy; <span id="year"></span> Tomaco Barber's. Todos los derechos reservados.</p>
+    <a href="https://instagram.com/tomacobarbers" target="_blank" rel="noopener">@tomacobarbers</a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const navToggle = document.getElementById('navToggle');
+  const mainNav = document.getElementById('mainNav');
+  navToggle.addEventListener('click', () => {
+    mainNav.classList.toggle('open');
+    navToggle.classList.toggle('open');
+  });
+  document.querySelectorAll('.main-nav a').forEach(link => {
+    link.addEventListener('click', () => {
+      mainNav.classList.remove('open');
+      navToggle.classList.remove('open');
+    });
+  });
+</script>
+
+</body>
+</html>
