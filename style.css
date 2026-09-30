@@ -277,6 +277,69 @@ img { max-width: 100%; display: block; }
   font-size: 0.92rem;
 }
 
+/* ---------- Clients ---------- */
+
+.clients {
+  background: var(--black);
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.client-photo {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid rgba(216, 31, 38, 0.25);
+  aspect-ratio: 3 / 4;
+  background: var(--black-card);
+}
+
+.client-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(30%);
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.client-photo:hover img {
+  transform: scale(1.06);
+  filter: grayscale(0%);
+}
+
+.client-video {
+  position: relative;
+}
+
+.client-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background: #000;
+}
+
+.client-video-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: var(--red);
+  color: var(--white);
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: 2;
+}
+
 /* ---------- About ---------- */
 
 .about-inner {
